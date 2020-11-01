@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		726844DA254B6EE000CB3393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844D9254B6EDF00CB3393 /* AppDelegate.swift */; };
+		726844DC254B6EE000CB3393 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 726844DB254B6EE000CB3393 /* art.scnassets */; };
+		726844DE254B6EE000CB3393 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844DD254B6EE000CB3393 /* GameViewController.swift */; };
+		726844E1254B6EE000CB3393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726844DF254B6EE000CB3393 /* Main.storyboard */; };
+		726844E3254B6EE100CB3393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726844E2254B6EE100CB3393 /* Assets.xcassets */; };
+		726844E6254B6EE100CB3393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726844E4254B6EE100CB3393 /* LaunchScreen.storyboard */; };
+		726844F1254B6EE100CB3393 /* TiltyBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844F0254B6EE100CB3393 /* TiltyBallTests.swift */; };
+		726844FC254B6EE100CB3393 /* TiltyBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844FB254B6EE100CB3393 /* TiltyBallUITests.swift */; };
+		7268450F254CAC5000CB3393 /* GameControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7268450E254CAC5000CB3393 /* GameControlProtocol.swift */; };
+		72684511254CAC6000CB3393 /* CollisionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72684510254CAC6000CB3393 /* CollisionDelegate.swift */; };
+		72684513254CAC7700CB3393 /* CollisionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72684512254CAC7700CB3393 /* CollisionProtocol.swift */; };
+		72684515254CAC9700CB3393 /* EffectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72684514254CAC9700CB3393 /* EffectController.swift */; };
+		72684517254CB14A00CB3393 /* LevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72684516254CB14A00CB3393 /* LevelController.swift */; };
+		7268451B254CB22D00CB3393 /* LevelAttemptRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7268451A254CB22D00CB3393 /* LevelAttemptRecordController.swift */; };
+		7268451D254CB25500CB3393 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7268451C254CB25500CB3393 /* GameSettings.swift */; };
+		72DF87D4254F59DA00D9FD7D /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87D3254F59DA00D9FD7D /* ModalController.swift */; };
+		72DF87D6254F5A1200D9FD7D /* ModalRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */; };
+		72DF87DB254F609E00D9FD7D /* GameControlTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87DA254F609E00D9FD7D /* GameControlTypes.swift */; };
+		72DF87DD254F66E200D9FD7D /* GameControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87DC254F66E200D9FD7D /* GameControlDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		726844ED254B6EE100CB3393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 726844CE254B6EDF00CB3393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726844D5254B6EDF00CB3393;
+			remoteInfo = TiltyBall;
+		};
+		726844F8254B6EE100CB3393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 726844CE254B6EDF00CB3393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 726844D5254B6EDF00CB3393;
+			remoteInfo = TiltyBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		726844D6254B6EDF00CB3393 /* TiltyBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiltyBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726844D9254B6EDF00CB3393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		726844DB254B6EE000CB3393 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		726844DD254B6EE000CB3393 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		726844E0254B6EE000CB3393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		726844E2254B6EE100CB3393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		726844E5254B6EE100CB3393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		726844E7254B6EE100CB3393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726844EC254B6EE100CB3393 /* TiltyBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltyBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726844F0254B6EE100CB3393 /* TiltyBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltyBallTests.swift; sourceTree = "<group>"; };
+		726844F2254B6EE100CB3393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726844F7254B6EE100CB3393 /* TiltyBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltyBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		726844FB254B6EE100CB3393 /* TiltyBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltyBallUITests.swift; sourceTree = "<group>"; };
+		726844FD254B6EE100CB3393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7268450E254CAC5000CB3393 /* GameControlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlProtocol.swift; sourceTree = "<group>"; };
+		72684510254CAC6000CB3393 /* CollisionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDelegate.swift; sourceTree = "<group>"; };
+		72684512254CAC7700CB3393 /* CollisionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionProtocol.swift; sourceTree = "<group>"; };
+		72684514254CAC9700CB3393 /* EffectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectController.swift; sourceTree = "<group>"; };
+		72684516254CB14A00CB3393 /* LevelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelController.swift; sourceTree = "<group>"; };
+		7268451A254CB22D00CB3393 /* LevelAttemptRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelAttemptRecordController.swift; sourceTree = "<group>"; };
+		7268451C254CB25500CB3393 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		72DF87D3254F59DA00D9FD7D /* ModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
+		72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRequestProtocol.swift; sourceTree = "<group>"; };
+		72DF87DA254F609E00D9FD7D /* GameControlTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlTypes.swift; sourceTree = "<group>"; };
+		72DF87DC254F66E200D9FD7D /* GameControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		726844D3254B6EDF00CB3393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844E9254B6EE100CB3393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844F4254B6EE100CB3393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		726844CD254B6EDF00CB3393 = {
+			isa = PBXGroup;
+			children = (
+				726844D8254B6EDF00CB3393 /* TiltyBall */,
+				726844EF254B6EE100CB3393 /* TiltyBallTests */,
+				726844FA254B6EE100CB3393 /* TiltyBallUITests */,
+				726844D7254B6EDF00CB3393 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		726844D7254B6EDF00CB3393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726844D6254B6EDF00CB3393 /* TiltyBall.app */,
+				726844EC254B6EE100CB3393 /* TiltyBallTests.xctest */,
+				726844F7254B6EE100CB3393 /* TiltyBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726844D8254B6EDF00CB3393 /* TiltyBall */ = {
+			isa = PBXGroup;
+			children = (
+				72DF87D9254F608000D9FD7D /* Enumerations */,
+				72684519254CB1CF00CB3393 /* Delegates */,
+				72684518254CB1C300CB3393 /* Protocols */,
+				7268450B254CAC0B00CB3393 /* Controllers */,
+				726844D9254B6EDF00CB3393 /* AppDelegate.swift */,
+				726844DB254B6EE000CB3393 /* art.scnassets */,
+				726844DD254B6EE000CB3393 /* GameViewController.swift */,
+				726844DF254B6EE000CB3393 /* Main.storyboard */,
+				726844E2254B6EE100CB3393 /* Assets.xcassets */,
+				726844E4254B6EE100CB3393 /* LaunchScreen.storyboard */,
+				726844E7254B6EE100CB3393 /* Info.plist */,
+				7268451C254CB25500CB3393 /* GameSettings.swift */,
+			);
+			path = TiltyBall;
+			sourceTree = "<group>";
+		};
+		726844EF254B6EE100CB3393 /* TiltyBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				726844F0254B6EE100CB3393 /* TiltyBallTests.swift */,
+				726844F2254B6EE100CB3393 /* Info.plist */,
+			);
+			path = TiltyBallTests;
+			sourceTree = "<group>";
+		};
+		726844FA254B6EE100CB3393 /* TiltyBallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				726844FB254B6EE100CB3393 /* TiltyBallUITests.swift */,
+				726844FD254B6EE100CB3393 /* Info.plist */,
+			);
+			path = TiltyBallUITests;
+			sourceTree = "<group>";
+		};
+		7268450B254CAC0B00CB3393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72684514254CAC9700CB3393 /* EffectController.swift */,
+				72684516254CB14A00CB3393 /* LevelController.swift */,
+				72DF87D3254F59DA00D9FD7D /* ModalController.swift */,
+				7268451A254CB22D00CB3393 /* LevelAttemptRecordController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		72684518254CB1C300CB3393 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				72684512254CAC7700CB3393 /* CollisionProtocol.swift */,
+				7268450E254CAC5000CB3393 /* GameControlProtocol.swift */,
+				72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		72684519254CB1CF00CB3393 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				72684510254CAC6000CB3393 /* CollisionDelegate.swift */,
+				72DF87DC254F66E200D9FD7D /* GameControlDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		72DF87D9254F608000D9FD7D /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				72DF87DA254F609E00D9FD7D /* GameControlTypes.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		726844D5254B6EDF00CB3393 /* TiltyBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72684500254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBall" */;
+			buildPhases = (
+				726844D2254B6EDF00CB3393 /* Sources */,
+				726844D3254B6EDF00CB3393 /* Frameworks */,
+				726844D4254B6EDF00CB3393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiltyBall;
+			productName = TiltyBall;
+			productReference = 726844D6254B6EDF00CB3393 /* TiltyBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		726844EB254B6EE100CB3393 /* TiltyBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72684503254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBallTests" */;
+			buildPhases = (
+				726844E8254B6EE100CB3393 /* Sources */,
+				726844E9254B6EE100CB3393 /* Frameworks */,
+				726844EA254B6EE100CB3393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726844EE254B6EE100CB3393 /* PBXTargetDependency */,
+			);
+			name = TiltyBallTests;
+			productName = TiltyBallTests;
+			productReference = 726844EC254B6EE100CB3393 /* TiltyBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		726844F6254B6EE100CB3393 /* TiltyBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72684506254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBallUITests" */;
+			buildPhases = (
+				726844F3254B6EE100CB3393 /* Sources */,
+				726844F4254B6EE100CB3393 /* Frameworks */,
+				726844F5254B6EE100CB3393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726844F9254B6EE100CB3393 /* PBXTargetDependency */,
+			);
+			name = TiltyBallUITests;
+			productName = TiltyBallUITests;
+			productReference = 726844F7254B6EE100CB3393 /* TiltyBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		726844CE254B6EDF00CB3393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = TiltyBallTeam;
+				TargetAttributes = {
+					726844D5254B6EDF00CB3393 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					726844EB254B6EE100CB3393 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 726844D5254B6EDF00CB3393;
+					};
+					726844F6254B6EE100CB3393 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 726844D5254B6EDF00CB3393;
+					};
+				};
+			};
+			buildConfigurationList = 726844D1254B6EDF00CB3393 /* Build configuration list for PBXProject "TiltyBall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 726844CD254B6EDF00CB3393;
+			productRefGroup = 726844D7254B6EDF00CB3393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				726844D5254B6EDF00CB3393 /* TiltyBall */,
+				726844EB254B6EE100CB3393 /* TiltyBallTests */,
+				726844F6254B6EE100CB3393 /* TiltyBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		726844D4254B6EDF00CB3393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726844DC254B6EE000CB3393 /* art.scnassets in Resources */,
+				726844E6254B6EE100CB3393 /* LaunchScreen.storyboard in Resources */,
+				726844E3254B6EE100CB3393 /* Assets.xcassets in Resources */,
+				726844E1254B6EE000CB3393 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844EA254B6EE100CB3393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844F5254B6EE100CB3393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		726844D2254B6EDF00CB3393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DF87D4254F59DA00D9FD7D /* ModalController.swift in Sources */,
+				7268451B254CB22D00CB3393 /* LevelAttemptRecordController.swift in Sources */,
+				7268451D254CB25500CB3393 /* GameSettings.swift in Sources */,
+				72DF87D6254F5A1200D9FD7D /* ModalRequestProtocol.swift in Sources */,
+				72DF87DB254F609E00D9FD7D /* GameControlTypes.swift in Sources */,
+				72684517254CB14A00CB3393 /* LevelController.swift in Sources */,
+				72684513254CAC7700CB3393 /* CollisionProtocol.swift in Sources */,
+				72684515254CAC9700CB3393 /* EffectController.swift in Sources */,
+				726844DE254B6EE000CB3393 /* GameViewController.swift in Sources */,
+				72DF87DD254F66E200D9FD7D /* GameControlDelegate.swift in Sources */,
+				72684511254CAC6000CB3393 /* CollisionDelegate.swift in Sources */,
+				7268450F254CAC5000CB3393 /* GameControlProtocol.swift in Sources */,
+				726844DA254B6EE000CB3393 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844E8254B6EE100CB3393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726844F1254B6EE100CB3393 /* TiltyBallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726844F3254B6EE100CB3393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726844FC254B6EE100CB3393 /* TiltyBallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726844EE254B6EE100CB3393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726844D5254B6EDF00CB3393 /* TiltyBall */;
+			targetProxy = 726844ED254B6EE100CB3393 /* PBXContainerItemProxy */;
+		};
+		726844F9254B6EE100CB3393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 726844D5254B6EDF00CB3393 /* TiltyBall */;
+			targetProxy = 726844F8254B6EE100CB3393 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		726844DF254B6EE000CB3393 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726844E0254B6EE000CB3393 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		726844E4254B6EE100CB3393 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726844E5254B6EE100CB3393 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726844FE254B6EE100CB3393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		726844FF254B6EE100CB3393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72684501254B6EE100CB3393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72684502254B6EE100CB3393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72684504254B6EE100CB3393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiltyBall.app/TiltyBall";
+			};
+			name = Debug;
+		};
+		72684505254B6EE100CB3393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiltyBall.app/TiltyBall";
+			};
+			name = Release;
+		};
+		72684507254B6EE100CB3393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiltyBall;
+			};
+			name = Debug;
+		};
+		72684508254B6EE100CB3393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AN4MVTMM88;
+				INFOPLIST_FILE = TiltyBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TiltyBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiltyBall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		726844D1254B6EDF00CB3393 /* Build configuration list for PBXProject "TiltyBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726844FE254B6EE100CB3393 /* Debug */,
+				726844FF254B6EE100CB3393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72684500254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72684501254B6EE100CB3393 /* Debug */,
+				72684502254B6EE100CB3393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72684503254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72684504254B6EE100CB3393 /* Debug */,
+				72684505254B6EE100CB3393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72684506254B6EE100CB3393 /* Build configuration list for PBXNativeTarget "TiltyBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72684507254B6EE100CB3393 /* Debug */,
+				72684508254B6EE100CB3393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 726844CE254B6EDF00CB3393 /* Project object */;
+}
