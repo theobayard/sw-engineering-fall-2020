@@ -36,6 +36,9 @@ class LevelController{
     /// The class responsible for handling game controls
     public let gameControlDelegate: GameControlDelegate
     
+    /// The active LevelAttemptRecordController
+    private let levelAttemptRecordController: LevelAttemptRecordController
+    
     
     // **** Public Methods **** //
     
@@ -124,9 +127,6 @@ class LevelController{
     
     
     // **** Private Variables **** //
-    
-    /// The active LevelAttemptRecordController
-    private let levelAttemptRecordController: LevelAttemptRecordController
     
     /// The delegate responsible for carrying out ModalRequestProtocol functions
     private let modalRequestDelegate: ModalRequestProtocol
