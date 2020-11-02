@@ -37,8 +37,10 @@ class LevelController{
     public let gameControlDelegate: GameControlDelegate
     
     /// The active LevelAttemptRecordController
-    private let levelAttemptRecordController: LevelAttemptRecordController
+    public let levelAttemptRecordController: LevelAttemptRecordController
     
+    /// The delegate responsible for carrying out ModalRequestProtocol functions
+    public let modalRequestDelegate: ModalRequestProtocol
     
     // **** Public Methods **** //
     
@@ -65,6 +67,7 @@ class LevelController{
      # Postconditions
      - The levelAttemptRecordConroller instance variable has been reset
      - The LevelModel has been reset
+     - effectController has been freshly initialized
      */
     public func restartLevel() {
         
@@ -124,18 +127,16 @@ class LevelController{
     public func startLevel(levelName: String) {
         
     }
-    
-    
     // **** Private Variables **** //
     
-    /// The delegate responsible for carrying out ModalRequestProtocol functions
-    private let modalRequestDelegate: ModalRequestProtocol
-    
+    /// Indicates whether or not the game is paused
+    private let isPaused: Bool
     
     // **** Private Methods **** //
     
     // Enforce singleton usage
     private init() {
+        isPaused = false
         effectController = EffectController()
         levelAttemptRecordController = LevelAttemptRecordController()
         gameControlDelegate = GameControlDelegate()
