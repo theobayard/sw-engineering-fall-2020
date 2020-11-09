@@ -55,7 +55,7 @@ class LevelController{
      - The level completed modal has been activated
     */
     public func completedLevel() {
-        
+        <#code#>
     }
     
     /**
@@ -70,7 +70,7 @@ class LevelController{
      - effectController has been freshly initialized
      */
     public func restartLevel() {
-        
+        <#code#>
     }
     
     /**
@@ -89,7 +89,7 @@ class LevelController{
      
      */
     public func pause() {
-        
+        <#code#>
     }
     
     /**
@@ -107,7 +107,7 @@ class LevelController{
      - The timer in this.levelAttemptRecordController is unpaused
      */
     public func unpause() {
-        
+        <#code#>
     }
     
     /**
@@ -125,7 +125,7 @@ class LevelController{
      - this.effectController has been freshly initialized
      */
     public func startLevel(levelName: String) {
-        
+        <#code#>
     }
     // **** Private Variables **** //
     
