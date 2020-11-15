@@ -111,6 +111,13 @@ class LevelController{
     }
     
     /**
+     Calls pause if to is true and unpause if false
+    */
+    public func setPause(setPauseTo to: Bool) {
+        <#code#>
+    }
+    
+    /**
      Begins a new level
      
      - Parameters:
