@@ -16,21 +16,18 @@ import CoreMotion
 class GameControlDelegate: GameControlProtocol {
     // **** Public Functions **** //
     
-    /// Forwards UITouch to class delegate instance
-    public func userTouchedScreen(userTouch: UITouch) {
+    func userDoubleTappedScreen(_ gestureRecognizer: UITapGestureRecognizer) {
+        // Double taps are always the same, so handle it here
+        
+        // Figure out what quadrant of the screen the tap was in (defined by drawing lines from opposite corners of the screen)
+        
+        // Rotate gravity pi/2 radians towards the tapped quadrant
+    }
+    
+    func userPannedScreen(_ gestureRecognizer: UIPanGestureRecognizer) {
+        // Forward to subControl
         <#code#>
     }
-    
-    /**
-     React to control setting change by setting myControlDelegate to the appropriate type
-     
-     - Parameters:
-        - toType: The new control type
-     */
-    public func controlsChanged(controlType toType: GameControlTypes) {
-        
-    }
-    
     
     init() {
         // Initialize myControlDelegate to the correct delegate based on the value of GameSettings.sharedInstance.controlType
@@ -39,11 +36,55 @@ class GameControlDelegate: GameControlProtocol {
         // Use this guide: https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift
     }
     
+    /**
+     React to control setting change by setting myControlDelegate to the appropriate type
+     
+     - Parameters:
+     - toType: The new control type
+     */
+    private func controlsChanged(controlType toType: GameControlTypes) {
+        
+    }
+    
     // **** Private Variables **** //
-    private let myControlDelegate: GameControlProtocol
+    private let myControlDelegate: SubGameControlProtocol
+}
+
+fileprivate protocol SubGameControlProtocol {
+    func userPannedScreen(_ gestureRecognizer: UIPanGestureRecognizer)
+}
+
+/**
+ A delegate in charge of user controls when the controls
+ are in gyroscope mode.
+ 
+ - Author:
+ Theo Bayard de Volo
+ */
+fileprivate class GyroGameControls: SubGameControlProtocol {
     
+    /// Do nothing
+    func userPannedScreen(_ gestureRecognizer: UIPanGestureRecognizer) {
+        // Nothing to do here as this control is disabled when this object is active
+    }
     
+    init() {
+        // Start listening to device gyroscope using this guide: https://developer.apple.com/documentation/coremotion/getting_processed_device-motion_data
+    }
     
+    deinit {
+        // Stop listening to device gyroscope
+    }
+    
+    /**
+     Update gravity direction relative to the phone screen
+     
+     - parameters:
+        - deviceAttitude: The orientation of the device relative to straight down
+     */
+    private func updateGravityDirection(deviceAttitude: CMAttitude) {
+        
+    }
     
 }
 
@@ -54,40 +95,16 @@ class GameControlDelegate: GameControlProtocol {
  - Author:
  Theo Bayard de Volo
  */
-fileprivate class GyroGameControlDelegate: GameControlProtocol {
-    
-    public func userTouchedScreen(userTouch: UITouch) {
-        <#code#>
+fileprivate class TouchGameControls: SubGameControlProtocol {
+
+    /// Tilt screen based on position relative to begining of touch
+    func userPannedScreen(_ gestureRecognizer: UIPanGestureRecognizer) {
+        // Use this tutorial: https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/handling_uikit_gestures/handling_pan_gestures
+        // Update gravity relative to distance from initial touch
     }
     
     init() {
         
     }
-    
-    /**
-     Calculate the neccesary gravity vector relative to the phone screen
-     
-     - parameters:
-        - deviceAttitude: The orientation of the device relative to straight down
-     */
-    private func calcNewGravityVector(deviceAttitude: CMAttitude) {
-        <#code#>
-    }
-    
-}
-
-/**
- A delegate in charge of user controls when the controls
- are in gyroscope mode.
- 
- - Author:
- Theo Bayard de Volo
- */
-fileprivate class TouchGameControlDelegate: GameControlProtocol {
-    func userTouchedScreen(userTouch: UITouch) {
-        <#code#>
-    }
-    
-    let levelController = LevelController.sharedInstance
     
 }

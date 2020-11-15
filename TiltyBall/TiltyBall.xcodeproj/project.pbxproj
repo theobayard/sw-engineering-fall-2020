@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724A4966255B6E3500BEC3A3 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A4965255B6E3500BEC3A3 /* Direction.swift */; };
 		726844DA254B6EE000CB3393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844D9254B6EDF00CB3393 /* AppDelegate.swift */; };
 		726844DC254B6EE000CB3393 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 726844DB254B6EE000CB3393 /* art.scnassets */; };
 		726844DE254B6EE000CB3393 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726844DD254B6EE000CB3393 /* GameViewController.swift */; };
@@ -26,6 +27,7 @@
 		72DF87D6254F5A1200D9FD7D /* ModalRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */; };
 		72DF87DB254F609E00D9FD7D /* GameControlTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87DA254F609E00D9FD7D /* GameControlTypes.swift */; };
 		72DF87DD254F66E200D9FD7D /* GameControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF87DC254F66E200D9FD7D /* GameControlDelegate.swift */; };
+		72EE223A2559CD5700E669E1 /* LevelModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EE22392559CD5700E669E1 /* LevelModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		724A4965255B6E3500BEC3A3 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		726844D6254B6EDF00CB3393 /* TiltyBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiltyBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726844D9254B6EDF00CB3393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726844DB254B6EE000CB3393 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRequestProtocol.swift; sourceTree = "<group>"; };
 		72DF87DA254F609E00D9FD7D /* GameControlTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlTypes.swift; sourceTree = "<group>"; };
 		72DF87DC254F66E200D9FD7D /* GameControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlDelegate.swift; sourceTree = "<group>"; };
+		72EE22392559CD5700E669E1 /* LevelModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724A4964255B6DBC00BEC3A3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				724A4965255B6E3500BEC3A3 /* Direction.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		726844CD254B6EDF00CB3393 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		726844D8254B6EDF00CB3393 /* TiltyBall */ = {
 			isa = PBXGroup;
 			children = (
+				724A4964255B6DBC00BEC3A3 /* Objects */,
 				72DF87D9254F608000D9FD7D /* Enumerations */,
 				72684519254CB1CF00CB3393 /* Delegates */,
 				72684518254CB1C300CB3393 /* Protocols */,
@@ -172,6 +185,7 @@
 				72684512254CAC7700CB3393 /* CollisionProtocol.swift */,
 				7268450E254CAC5000CB3393 /* GameControlProtocol.swift */,
 				72DF87D5254F5A1200D9FD7D /* ModalRequestProtocol.swift */,
+				72EE22392559CD5700E669E1 /* LevelModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -331,7 +345,9 @@
 				72DF87D6254F5A1200D9FD7D /* ModalRequestProtocol.swift in Sources */,
 				72DF87DB254F609E00D9FD7D /* GameControlTypes.swift in Sources */,
 				72684517254CB14A00CB3393 /* LevelController.swift in Sources */,
+				72EE223A2559CD5700E669E1 /* LevelModelProtocol.swift in Sources */,
 				72684513254CAC7700CB3393 /* CollisionProtocol.swift in Sources */,
+				724A4966255B6E3500BEC3A3 /* Direction.swift in Sources */,
 				72684515254CAC9700CB3393 /* EffectController.swift in Sources */,
 				726844DE254B6EE000CB3393 /* GameViewController.swift in Sources */,
 				72DF87DD254F66E200D9FD7D /* GameControlDelegate.swift in Sources */,

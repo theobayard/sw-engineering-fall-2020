@@ -18,9 +18,16 @@ import Foundation
 protocol GameControlProtocol {
     
     /**
-     A function for alerting the delegate of a screen touch
+     A function for alerting the delegate of a double tap
      - parameters:
-        - userTouch: A touch event
+        - gestureRecognizer: the recognizer that recognized the action
      */
-    func userTouchedScreen(userTouch: UITouch)
+    func userDoubleTappedScreen(_ gestureRecognizer : UITapGestureRecognizer )
+    
+    /**
+     A function for alerting the delegate of a pan
+     - parameters:
+        - gestureRecognizer: the recognizer that recognized the action
+     */
+    func userPannedScreen(_ gestureRecognizer : UIPanGestureRecognizer)
 }
