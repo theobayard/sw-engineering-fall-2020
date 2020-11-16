@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+/**
+ A global class for storing game setting information
+ */
+struct GameSettings {
+    private init() {}
+    static let sharedInstance = GameSettings()
+    let controlType: GameControlTypes
+    let radiansToRotatePerPixelPanned: Float
+}
